@@ -1,4 +1,4 @@
-{% set version = "0.2.4" %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/modeltime.resample_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/modeltime.resample/modeltime.resample_{{ version }}.tar.gz
-  sha256: 9001ef563c890c9eb88fcb66e75163fceaaa94d3cca4bf44fe926b53222f0b4e
+  sha256: 3600633a284084404dbfec47c1b903a98be034d5a2612e67b6adbe1819e3f945
 
 build:
   number: 0
