@@ -1,4 +1,4 @@
-{% set version = "0.2.4" %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/modeltime.resample_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/modeltime.resample/modeltime.resample_{{ version }}.tar.gz
-  sha256: 9001ef563c890c9eb88fcb66e75163fceaaa94d3cca4bf44fe926b53222f0b4e
+  sha256: 3600633a284084404dbfec47c1b903a98be034d5a2612e67b6adbe1819e3f945
 
 build:
   number: 0
@@ -25,16 +25,11 @@ requirements:
   host:
     - r-base
     - r-cli
-    - r-crayon
-    - r-dials
-    - r-dplyr
-    - r-forcats
-    - r-ggplot2
-    - r-glue
+    - r-dplyr >=1.0.0
+    - r-ggplot2 >=3.4.0
     - r-hardhat
     - r-magrittr
     - r-modeltime >=0.3.0
-    - r-parsnip >=0.1.4
     - r-plotly
     - r-progressr
     - r-purrr
@@ -46,22 +41,18 @@ requirements:
     - r-tictoc
     - r-tidyr
     - r-timetk >=2.5.0
-    - r-tune
+    - r-tune >=2.0.0
+    - r-withr
     - r-workflows
     - r-yardstick
   run:
     - r-base
     - r-cli
-    - r-crayon
-    - r-dials
-    - r-dplyr
-    - r-forcats
-    - r-ggplot2
-    - r-glue
+    - r-dplyr >=1.0.0
+    - r-ggplot2 >=3.4.0
     - r-hardhat
     - r-magrittr
     - r-modeltime >=0.3.0
-    - r-parsnip >=0.1.4
     - r-plotly
     - r-progressr
     - r-purrr
@@ -73,7 +64,8 @@ requirements:
     - r-tictoc
     - r-tidyr
     - r-timetk >=2.5.0
-    - r-tune
+    - r-tune >=2.0.0
+    - r-withr
     - r-workflows
     - r-yardstick
 
