@@ -25,16 +25,11 @@ requirements:
   host:
     - r-base
     - r-cli
-    - r-crayon
-    - r-dials
-    - r-dplyr
-    - r-forcats
-    - r-ggplot2
-    - r-glue
+    - r-dplyr >=1.0.0
+    - r-ggplot2 >=3.4.0
     - r-hardhat
     - r-magrittr
     - r-modeltime >=0.3.0
-    - r-parsnip >=0.1.4
     - r-plotly
     - r-progressr
     - r-purrr
@@ -46,22 +41,18 @@ requirements:
     - r-tictoc
     - r-tidyr
     - r-timetk >=2.5.0
-    - r-tune
+    - r-tune >=2.0.0
+    - r-withr
     - r-workflows
     - r-yardstick
   run:
     - r-base
     - r-cli
-    - r-crayon
-    - r-dials
-    - r-dplyr
-    - r-forcats
-    - r-ggplot2
-    - r-glue
+    - r-dplyr >=1.0.0
+    - r-ggplot2 >=3.4.0
     - r-hardhat
     - r-magrittr
     - r-modeltime >=0.3.0
-    - r-parsnip >=0.1.4
     - r-plotly
     - r-progressr
     - r-purrr
@@ -73,7 +64,8 @@ requirements:
     - r-tictoc
     - r-tidyr
     - r-timetk >=2.5.0
-    - r-tune
+    - r-tune >=2.0.0
+    - r-withr
     - r-workflows
     - r-yardstick
 
